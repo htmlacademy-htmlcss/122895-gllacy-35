@@ -1,0 +1,75 @@
+/*
+  !ГЛОБАЛЬНО
+*/
+/* {
+  width: 100%;
+  height: 100vh;
+  background-color: #FEAFC3;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+/*
+  *ШАПКА HEADER
+*/
+/*
+.header__navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 0;
+}
+
+.navigation__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navigation__list_left {
+  width: 600px;
+  margin-right: 20px;
+}
+
+.navigation__item {
+  padding: 8px 16px;
+  list-style: none;
+}
+
+.navigation__item_catalog {
+  padding-right: 20px;
+}
+/* .navigation__link:not(:first-child) {
+  margin-left: 32px;
+}
+*/
+.rubl {
+font-family: 'PT Sans', serif;
+}
