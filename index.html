@@ -16,13 +16,20 @@
     <header class="main__header">
       <div class="container">
         <nav class="header__navigation">
+          <!--*Логотип-->
+          <div class="header_logo">
+            <a class="header__link_logo" href="https://htmlacademy.ru/">
+              <img
+                class="logo_image"
+                src="content/logo_header.png"
+                alt="Глейси"
+              />
+            </a>
+          </div>
+
           <!--*Левое меню-->
           <ul class="navigation__list navigation__list_left">
-            <li class="navigation__item">
-              <a class="navigation__link_logo" href="https://htmlacademy.ru/">
-                <img src="img/content/logo_header.png" alt="Глейси" />
-              </a>
-            </li>
+            <li class="navigation__item"></li>
             <li class="navigation__item">
               <a class="navigation__link dropdown" href="#">Каталог</a>
             </li>
@@ -66,7 +73,7 @@
       <!--TODO СЛАЙДЕР-->
       <section class="assortment">
         <div class="assortment__wrapper assortment__slider">
-          <h2 class="visually-hidden">Ассортимент</h2>
+          <!--  <h2 class="visually-hidden">Ассортимент</h2>-->
 
           <!--*ОПИСАНИЕ-->
           <div class="assortment__about">
@@ -83,7 +90,7 @@
           <div class="assortment__slider">
             <img
               class="slider_image-active assortment_iceCream_red"
-              src="/img/content/slider_ice_cream_red-active.png"
+              src="/content/slider_ice_cream_red-active.png"
               alt="Мороженного с клубничным джемом"
             />
             <button class="slider_button slider-prev" type="button">
@@ -94,12 +101,12 @@
             </button>
             <img
               class="slider_image-thumbnail assortment_iceCream_yellow"
-              src="/img/content/slider_ice_cream_yellow-next.png"
+              src="/content/slider_ice_cream_yellow-next.png"
               alt="Мороженного с желтым джемом"
             />
             <img
               class="slider_image-thumbnail assortment_iceCream_blue"
-              src="/img/content/slider_ice_cream_blue-next.png"
+              src="/content/slider_ice_cream_blue-next.png"
               alt="Мороженного с синим джемом"
             />
           </div>
@@ -121,7 +128,7 @@
                   class="socials__link"
                   href="https://www.youtube.com/user/htmlacademyru"
                 >
-                  <span class="visually-hidden"> youtube </span>
+                  <span class="visually-hidden"> Youtube </span>
                 </a>
               </li>
             </ul>
@@ -131,6 +138,7 @@
 
       <!--TODO АКЦИИ-->
       <section class="promotions">
+        <!---->
         <h2 class="visually-hidden">Акции</h2>
         <p class="title title-center">
           Заказывайте мороженое и получайте подарки!
@@ -139,11 +147,11 @@
         <ul class="promotions__list">
           <li class="promotions__item">
             <h3 class="promotions__title">Малинка даром</h3>
-            <img
+            <!--  <img
               class="promotions__image"
-              src="/img/content/sale_малина.png"
+              src="/content/sale_малина.png"
               alt="Малиновое мороженное"
-            />
+            />-->
             <p class="populsr__description">
               При покупке 2 кг любого фруктового мороженого добавим в ваш заказ
               банку малинового варенья бесплатно.
@@ -152,11 +160,11 @@
           </li>
           <li class="promotions__item">
             <h3 class="promotions__title">Маршмеллоу даром</h3>
-            <img
+            <!--  <img
               class="promotions__image"
-              src="/img/content/sale_маршмелоу.png"
+              src="/content/sale_маршмелоу.png"
               alt="Малиновое мороженное"
-            />
+            />-->
             <p class="populsr__description">
               При покупке 2 кг пломбира добавимв ваш заказ упаковку
               нежныхзефирок совершенно бесплатно.
@@ -168,6 +176,7 @@
 
       <!--TODO ПОПУЛЯРНЫЕ ТОВАРЫ-->
       <section class="bestseller">
+        <!---->
         <h2 class="visually-hidden">Популярные товары</h2>
         <p class="title title-center">
           Попробуйте самые популярные вкусы нашего мороженого
@@ -176,54 +185,54 @@
         <ul class="bestseller__list">
           <li class="bestseller__item">
             <h3 class="bestseller__title">Малинка</h3>
-            <img
-              src="/img/content/ice_cream-малинка.png"
+            <!--    <img
+              src="/content/ice_cream-малинка.png"
               alt="Малиновое мороженное"
-            />
-            <p class="populsr__description">
+            />-->
+            <p class="popular__description">
               Сливочное мороженое с малиновым джемом
             </p>
-            <b>310 ₽/кг</b>
+            <span class="popular__price bold_font">310 ₽/кг</span>
             <button class="bestseller__card card" type="button">
               <span class="visually-hidden">Добавить в корзину</span>
             </button>
           </li>
           <li class="bestseller__item">
             <h3 class="bestseller__title">Фисташка</h3>
-            <img
-              src="/img/content/ice_cream-фисташка.png"
+            <!--   <img
+              src="/content/ice_cream-фисташка.png"
               alt="Малиновое мороженное"
-            />
-            <p class="populsr__description">
+            />-->
+            <p class="popular__description">
               Фисташковый пломбир с кусочками шоколада
             </p>
-            <b>310 ₽/кг</b>
+            <span class="popular__price bold_font">10 ₽/кг</span>
             <button class="bestseller__card card" type="button">
               <span class="visually-hidden">Добавить в корзину</span>
             </button>
           </li>
           <li class="bestseller__item">
             <h3 class="bestseller__title">Черника</h3>
-            <img
-              src="/img/content/ice_cream-черника.png"
+            <!--  <img
+              src="/content/ice_cream-черника.png"
               alt="Малиновое мороженное"
-            />
-            <p class="populsr__description">Крем-брюле с черничным джемом</p>
-            <b>310 ₽/кг</b>
+            />-->
+            <p class="popular__description">Крем-брюле с черничным джемом</p>
+            <span class="popular__price bold_font">310 ₽/кг</span>
             <button class="bestseller__card card" type="button">
               <span class="visually-hidden">Добавить в корзину</span>
             </button>
           </li>
           <li class="bestseller__item">
             <h3 class="bestseller__title">Бабл-гам</h3>
-            <img
-              src="/img/content/ice_cream-баблгам.png"
+            <!--   <img
+              src="/content/ice_cream-баблгам.png"
               alt="Малиновое мороженное"
-            />
-            <p class="populsr__description">
+            />-->
+            <p class="popular__description">
               Ванильный пломбир со сладкой посыпкой
             </p>
-            <b>310 ₽/кг</b>
+            <span class="popular__price bold_font">310 ₽/кг</span>
             <button class="bestseller__card card" type="button">
               <span class="visually-hidden">Добавить в корзину</span>
             </button>
@@ -234,6 +243,7 @@
       <!--TODO ОСОБЕННОСТИ-->
       <section class="advantages">
         <div class="advantages__wrapper">
+          <!---->
           <h2 class="visually-hidden">Преимущества</h2>
           <p class="title title-center">
             Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого
@@ -275,8 +285,7 @@
 
       <!--TODO БЛОГ-->
       <article class="blog">
-        <h2 class="visually-hidden">Новости</h2>
-        <p class="blog__title">Новое в нашем блоге</p>
+        <h2 class="blog__title">Новое в нашем блоге</h2>
         <p class="title">
           <a class="blog__title_link" href="#">
             10 способов сервировки фруктовых щербетов к столу</a
@@ -286,40 +295,38 @@
 
       <!--TODO ПОДПИСКА-->
       <article class="subscription">
-        <h2 class="visually-hidden">Подписка</h2>
-        <div class="subscription__wrapper">
-          <form
-            class="subscription__form"
-            action="mailto:email@example.com"
-            method="get"
-          >
-            <label class="subscription__description" for="subscription-email">
-              Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего
-              самого вкусного, что у нас происходит. Обещаем не спамить и не
-              слать всякой ненужной ерунды. Честно =)
-            </label>
-            <input
-              class="field subscription__field"
-              type="email"
-              id="subscription-email"
-              name="subscription-email"
-              placeholder="email@example.com"
-              required
-            />
-            <button class="btn btn-red btn__subscription" type="submit">
-              Отправить
-            </button>
-          </form>
-        </div>
+        <!--  <h2 class="visually-hidden">Подписка</h2>-->
+        <form
+          class="subscription__form"
+          action="mailto:email@example.com"
+          method="get"
+        >
+          <label class="subscription__description" for="subscription-email">
+            Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего
+            самого вкусного, что у нас происходит. Обещаем не спамить и не слать
+            всякой ненужной ерунды. Честно =)
+          </label>
+          <input
+            class="field subscription__field"
+            type="email"
+            id="subscription-email"
+            name="subscription-email"
+            placeholder="email@example.com"
+            required
+          />
+          <button class="btn btn-red btn__subscription" type="submit">
+            Отправить
+          </button>
+        </form>
       </article>
 
       <!--TODO ФОРМА ОБРАТНОЙ СВЯЗИ-->
       <section class="feedback">
         <div class="feedback _wrapper">
-          <h2 class="visually-hidden">Форма обратной связи</h2>
+          <!--     <h2 class="visually-hidden">Форма обратной связи</h2>-->
           <!--*ОПИСАНИЕ-->
           <div class="feedback__about">
-            <p class="title">Доставка любимого мороженого на дом</p>
+            <h2 class="title">Доставка любимого мороженого на дом</h2>
             <p class="description">
               Хочется полакомиться любимым десертом, но нет времени съездить в
               магазин? Закажите доставку мороженого на дом, и курьер привезёт
@@ -328,13 +335,13 @@
           </div>
           <!--*Фо-->
           <div class="buy">
+            <p class="buy__description">
+              Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы
+              подтвердить заказ.
+            </p>
             <form class="buy__form" action="#" method="get">
-              <p class="buy__description">
-                Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы
-                подтвердить заказ.
-              </p>
               <p class="buy__form_data">
-                <label class="buy__data" for="buy-data">Дата </label>
+                <label class="buy__data" for="buy-data">Дата</label>
                 <input
                   class="field buy__field"
                   type="text"
@@ -344,7 +351,7 @@
                 />
               </p>
               <p class="buy__form_phone">
-                <label class="buy__phone" for="buy-phone">Телефон </label>
+                <label class="buy__phone" for="buy-phone">Телефон</label>
                 <input
                   class="field buy__field"
                   type="tel"
@@ -373,7 +380,7 @@
 
       <!--TODO КОНТАКТЫ-->
       <section class="contacts">
-        <h2 class="visually-hidden">Контакты</h2>
+        <!--    <h2 class="visually-hidden">Контакты</h2>-->
         <form class="feedback__form" action="#" method="get">
           <h3 class="contacts__subtitle">
             Адрес главного офиса и офлайн-магазина:
@@ -383,7 +390,9 @@
           </p>
           <h3 class="contacts__subtitle">Для заказов по телефону:</h3>
           <p class="contacts__phone">
-            <b><a href="tel:+7(812)812-12-12">+7 (812) 812-12-12</a></b>
+            <span class=""
+              ><a href="tel:+7(812)812-12-12">+7 (812) 812-12-12</a></span
+            >
             <span class="contacts__working_hours"> (с 10 до 20 ежедневно)</span>
           </p>
           <button class="btn btn-red btn__feedback popup" type="submit">
@@ -423,7 +432,7 @@
       <nav class="footer__navigation">
         <ul class="footer__navigation_list">
           <li class="footer__navigation_item footer__navigation_item-like">
-            <b>Для поставщиков</b>
+            <span class="bold_font">Для поставщиков</span>
           </li>
           <li class="footer__navigation_item">О производстве</li>
           <li class="footer__navigation_item">Наши документы</li>
@@ -434,7 +443,7 @@
       <div class="footer__copyright">
         <img
           class="footer__image_logo"
-          src="/img/content/logo_htmlacademy.png"
+          src="/content/logo_htmlacademy.png"
           alt=".html academy"
         />
         <address>
