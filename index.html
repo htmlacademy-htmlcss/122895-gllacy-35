@@ -13,57 +13,55 @@
   </head>
   <body>
     <!--   ?ШАПКА САЙТА    -->
-    <header class="main__header">
-      <div class="container">
-        <nav class="header__navigation">
-          <!--*Логотип-->
-          <div class="header_logo">
-            <a class="header__link_logo" href="https://htmlacademy.ru/">
-              <img
-                class="logo_image"
-                src="content/logo_header.png"
-                alt="Глейси"
-              />
+    <header class="main__header container">
+      <nav class="header__navigation">
+        <!--*Логотип-->
+        <div class="header_logo">
+          <a class="header__link_logo" href="https://htmlacademy.ru/">
+            <img
+              class="logo_image"
+              src="content/logo_header.png"
+              alt="Глейси"
+            />
+          </a>
+        </div>
+
+        <!--*Левое меню-->
+        <ul class="navigation__list navigation__list_left">
+          <li class="navigation__item"></li>
+          <li class="navigation__item">
+            <a class="navigation__link dropdown" href="#">Каталог</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Доставка и оплата</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">О компании</a>
+          </li>
+        </ul>
+
+        <!--*Правое меню-->
+        <ul class="navigation__list navigation__list_user">
+          <li class="navigation__item">
+            <a class="navigation__link number" href="tel:+7800555-86-28"
+              >+7 800 555-86-28</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link search" href="#">
+              <span class="visually-hidden">Поиск</span>
             </a>
-          </div>
-
-          <!--*Левое меню-->
-          <ul class="navigation__list navigation__list_left">
-            <li class="navigation__item"></li>
-            <li class="navigation__item">
-              <a class="navigation__link dropdown" href="#">Каталог</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Доставка и оплата</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">О компании</a>
-            </li>
-          </ul>
-
-          <!--*Правое меню-->
-          <ul class="navigation__list navigation__list_user">
-            <li class="navigation__item">
-              <a class="navigation__link number" href="tel:+7800555-86-28"
-                >+7 800 555-86-28</a
-              >
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link search" href="#">
-                <span class="visually-hidden">Поиск</span>
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link entry" href="#">Вход</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link card" href="#">
-                <span class="visually-hidden">Корзина</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link entry" href="#">Вход</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link card" href="#">
+              <span class="visually-hidden">Корзина</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <!--   ?ОСНОВНОЕ МЕНЮ    -->
@@ -73,11 +71,9 @@
       <!--TODO СЛАЙДЕР-->
       <section class="assortment">
         <div class="assortment__wrapper assortment__slider">
-          <!--  <h2 class="visually-hidden">Ассортимент</h2>-->
-
           <!--*ОПИСАНИЕ-->
           <div class="assortment__about">
-            <p class="title">Нежный пломбир с клубничным джемом</p>
+            <h2 class="title">Нежный пломбир с клубничным джемом</h2>
             <p class="description">
               Натуральное мороженое из свежих сливок и молока с вкуснейшим
               клубничным джемом – это идеальный десерт для всей семьи.
@@ -86,6 +82,7 @@
               Заказать
             </button>
           </div>
+
           <!--*ФОТО-->
           <div class="assortment__slider">
             <img
@@ -110,48 +107,40 @@
               alt="Мороженного с синим джемом"
             />
           </div>
+
           <!--*СОЦ.СЕТИ-->
-          <div class="socials socials__header">
-            <ul class="socials__list">
-              <li class="socials__item">
-                <a class="socials__link" href="https://t.me/htmlacademy">
-                  <span class="visually-hidden"> Телеграмм </span>
-                </a>
-              </li>
-              <li class="socials__item">
-                <a class="socials__link" href="https://vk.com/htmlacademy">
-                  <span class="visually-hidden"> Вконтакте </span>
-                </a>
-              </li>
-              <li class="socials__item">
-                <a
-                  class="socials__link"
-                  href="https://www.youtube.com/user/htmlacademyru"
-                >
-                  <span class="visually-hidden"> Youtube </span>
-                </a>
-              </li>
-            </ul>
-          </div>
+          <ul class="socials socials__header">
+            <li class="socials__item">
+              <a class="socials__link" href="https://t.me/htmlacademy">
+                <span class="visually-hidden"> Телеграмм </span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden"> Вконтакте </span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a
+                class="socials__link"
+                href="https://www.youtube.com/user/htmlacademyru"
+              >
+                <span class="visually-hidden"> Youtube </span>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
 
       <!--TODO АКЦИИ-->
       <section class="promotions">
-        <!---->
-        <h2 class="visually-hidden">Акции</h2>
-        <p class="title title-center">
+        <h2 class="title title-center">
           Заказывайте мороженое и получайте подарки!
-        </p>
+        </h2>
         <!--СПИСОК-->
         <ul class="promotions__list">
           <li class="promotions__item">
             <h3 class="promotions__title">Малинка даром</h3>
-            <!--  <img
-              class="promotions__image"
-              src="/content/sale_малина.png"
-              alt="Малиновое мороженное"
-            />-->
             <p class="populsr__description">
               При покупке 2 кг любого фруктового мороженого добавим в ваш заказ
               банку малинового варенья бесплатно.
@@ -160,11 +149,6 @@
           </li>
           <li class="promotions__item">
             <h3 class="promotions__title">Маршмеллоу даром</h3>
-            <!--  <img
-              class="promotions__image"
-              src="/content/sale_маршмелоу.png"
-              alt="Малиновое мороженное"
-            />-->
             <p class="populsr__description">
               При покупке 2 кг пломбира добавимв ваш заказ упаковку
               нежныхзефирок совершенно бесплатно.
@@ -176,19 +160,13 @@
 
       <!--TODO ПОПУЛЯРНЫЕ ТОВАРЫ-->
       <section class="bestseller">
-        <!---->
-        <h2 class="visually-hidden">Популярные товары</h2>
-        <p class="title title-center">
+        <h2 class="title title-center">
           Попробуйте самые популярные вкусы нашего мороженого
-        </p>
+        </h2>
         <!--СПИСОК-->
         <ul class="bestseller__list">
           <li class="bestseller__item">
             <h3 class="bestseller__title">Малинка</h3>
-            <!--    <img
-              src="/content/ice_cream-малинка.png"
-              alt="Малиновое мороженное"
-            />-->
             <p class="popular__description">
               Сливочное мороженое с малиновым джемом
             </p>
@@ -199,10 +177,6 @@
           </li>
           <li class="bestseller__item">
             <h3 class="bestseller__title">Фисташка</h3>
-            <!--   <img
-              src="/content/ice_cream-фисташка.png"
-              alt="Малиновое мороженное"
-            />-->
             <p class="popular__description">
               Фисташковый пломбир с кусочками шоколада
             </p>
@@ -213,10 +187,6 @@
           </li>
           <li class="bestseller__item">
             <h3 class="bestseller__title">Черника</h3>
-            <!--  <img
-              src="/content/ice_cream-черника.png"
-              alt="Малиновое мороженное"
-            />-->
             <p class="popular__description">Крем-брюле с черничным джемом</p>
             <span class="popular__price bold_font">310 ₽/кг</span>
             <button class="bestseller__card card" type="button">
@@ -243,12 +213,10 @@
       <!--TODO ОСОБЕННОСТИ-->
       <section class="advantages">
         <div class="advantages__wrapper">
-          <!---->
-          <h2 class="visually-hidden">Преимущества</h2>
-          <p class="title title-center">
+          <h2 class="title title-center">
             Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого
             собственного производства на развес
-          </p>
+          </h2>
           <!--СПИСОК-->
           <ul class="advantages__list">
             <li class="advantages__item">
@@ -295,7 +263,6 @@
 
       <!--TODO ПОДПИСКА-->
       <article class="subscription">
-        <!--  <h2 class="visually-hidden">Подписка</h2>-->
         <form
           class="subscription__form"
           action="mailto:email@example.com"
@@ -322,65 +289,61 @@
 
       <!--TODO ФОРМА ОБРАТНОЙ СВЯЗИ-->
       <section class="feedback">
-        <div class="feedback _wrapper">
-          <!--     <h2 class="visually-hidden">Форма обратной связи</h2>-->
-          <!--*ОПИСАНИЕ-->
-          <div class="feedback__about">
-            <h2 class="title">Доставка любимого мороженого на дом</h2>
-            <p class="description">
-              Хочется полакомиться любимым десертом, но нет времени съездить в
-              магазин? Закажите доставку мороженого на дом, и курьер привезёт
-              вам ваш заказ в течение часа!
+        <!--*ОПИСАНИЕ-->
+        <div class="feedback__about">
+          <h2 class="title">Доставка любимого мороженого на дом</h2>
+          <p class="description">
+            Хочется полакомиться любимым десертом, но нет времени съездить в
+            магазин? Закажите доставку мороженого на дом, и курьер привезёт вам
+            ваш заказ в течение часа!
+          </p>
+        </div>
+        <!--*Фо-->
+        <div class="buy">
+          <p class="buy__description">
+            Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы
+            подтвердить заказ.
+          </p>
+          <form class="buy__form" action="#" method="get">
+            <p class="buy__form_data">
+              <label class="buy__data" for="buy-data">Дата</label>
+              <input
+                class="field buy__field"
+                type="text"
+                id="buy-data"
+                name="buy-data"
+                placeholder="01.04.2020"
+              />
             </p>
-          </div>
-          <!--*Фо-->
-          <div class="buy">
-            <p class="buy__description">
-              Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы
-              подтвердить заказ.
+            <p class="buy__form_phone">
+              <label class="buy__phone" for="buy-phone">Телефон</label>
+              <input
+                class="field buy__field"
+                type="tel"
+                id="buy-phone"
+                name="buy-phone"
+                placeholder="+7 800 999-00-00"
+              />
             </p>
-            <form class="buy__form" action="#" method="get">
-              <p class="buy__form_data">
-                <label class="buy__data" for="buy-data">Дата</label>
-                <input
-                  class="field buy__field"
-                  type="text"
-                  id="buy-data"
-                  name="buy-data"
-                  placeholder="01.04.2020"
-                />
-              </p>
-              <p class="buy__form_phone">
-                <label class="buy__phone" for="buy-phone">Телефон</label>
-                <input
-                  class="field buy__field"
-                  type="tel"
-                  id="buy-phone"
-                  name="buy-phone"
-                  placeholder="+7 800 999-00-00"
-                />
-              </p>
-              <p class="buy__form_adress">
-                <label class="buy__adress" for="buy-adress">Адрес</label>
-                <input
-                  class="field buy__field"
-                  type="text"
-                  id="buy-adress"
-                  name="buy-adress"
-                  placeholder="ул. Большая Конюшенная, 19/8"
-                />
-              </p>
-              <button class="btn btn-red btn__buy" type="submit">
-                Отправить
-              </button>
-            </form>
-          </div>
+            <p class="buy__form_adress">
+              <label class="buy__adress" for="buy-adress">Адрес</label>
+              <input
+                class="field buy__field"
+                type="text"
+                id="buy-adress"
+                name="buy-adress"
+                placeholder="ул. Большая Конюшенная, 19/8"
+              />
+            </p>
+            <button class="btn btn-red btn__buy" type="submit">
+              Отправить
+            </button>
+          </form>
         </div>
       </section>
 
       <!--TODO КОНТАКТЫ-->
       <section class="contacts">
-        <!--    <h2 class="visually-hidden">Контакты</h2>-->
         <form class="feedback__form" action="#" method="get">
           <h3 class="contacts__subtitle">
             Адрес главного офиса и офлайн-магазина:
@@ -405,40 +368,36 @@
     <!--  ?ПОДВАЛ САЙТА    -->
     <footer class="main__footer">
       <!--*СОЦ.СЕТИ-->
-      <div class="socials socials__footer">
-        <ul class="socials__list">
-          <li class="socials__item">
-            <a class="socials__link" href="https://t.me/htmlacademy">
-              <span class="visually-hidden"> Телеграмм </span>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden"> Вконтакте </span>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a
-              class="socials__link"
-              href="https://www.youtube.com/user/htmlacademyru"
-            >
-              <span class="visually-hidden"> youtube </span>
-            </a>
-          </li>
-        </ul>
-      </div>
+      <ul class="socials socials__footer">
+        <li class="socials__item">
+          <a class="socials__link" href="https://t.me/htmlacademy">
+            <span class="visually-hidden"> Телеграмм </span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden"> Вконтакте </span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a
+            class="socials__link"
+            href="https://www.youtube.com/user/htmlacademyru"
+          >
+            <span class="visually-hidden"> youtube </span>
+          </a>
+        </li>
+      </ul>
 
       <!--*Навигация-->
-      <nav class="footer__navigation">
-        <ul class="footer__navigation_list">
-          <li class="footer__navigation_item footer__navigation_item-like">
-            <span class="bold_font">Для поставщиков</span>
-          </li>
-          <li class="footer__navigation_item">О производстве</li>
-          <li class="footer__navigation_item">Наши документы</li>
-          <li class="footer__navigation_item">Экологические стандарты</li>
-        </ul>
-      </nav>
+      <ul class="footer__navigation_list">
+        <li class="footer__navigation_item footer__navigation_item-like">
+          <span class="bold_font">Для поставщиков</span>
+        </li>
+        <li class="footer__navigation_item">О производстве</li>
+        <li class="footer__navigation_item">Наши документы</li>
+        <li class="footer__navigation_item">Экологические стандарты</li>
+      </ul>
 
       <div class="footer__copyright">
         <img
