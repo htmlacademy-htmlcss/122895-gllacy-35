@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
-* Студент: [Вячеслав Кносаль](https://up.htmlacademy.ru/htmlcss/35/user/122895).
-* Наставник: `Неизвестно`.
+- Студент: [Вячеслав Кносаль](https://up.htmlacademy.ru/htmlcss/35/user/122895).
+- Наставник: [Константин Антонов](https://up.htmlacademy.ru/htmlcss/35/user/175216).
 
 ---
 
