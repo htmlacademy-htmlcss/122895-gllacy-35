@@ -17,7 +17,13 @@
       <nav class="header__navigation">
         <!--*Логотип-->
         <a class="header_logo header__link_logo" href="index.html">
-          <img class="logo_image" src="/images/icon/logo_header.svg" width="137" height="56" alt="Логотип Глейси">
+          <img
+            class="logo_image"
+            src="images/logo_header.svg"
+            width="137"
+            height="56"
+            alt="Логотип Глейси."
+          >
         </a>
 
         <!--*Левое меню-->
@@ -67,7 +73,7 @@
             <a class="navigation__link entry" href="#">Вход</a>
             <div class="entry__account_dropdown">
               <h2 class="title auth_title">Личный кабинет</h2>
-              <form class="auth" action="#" method="get">
+              <form class="auth" action="https://echo.htmlacademy.ru/" method="get">
                 <input type="email" value="email" placeholder="email@example.com">
                 <input type="password" value="password" placeholder="password" required>
                 <button class="btn btn-red" type="submit">Войти</button>
@@ -132,27 +138,27 @@
             </button>
             <img
               class="slider_image-active assortment_iceCream_red"
-              src="/images/content/slider_ice_cream_red-active.png"
+              src="images/slider/slider_ice_cream_red-active.png"
               width="306"
               height="507"
-              alt="Мороженного с клубничным джемом"
+              alt="Мороженное с клубничным джемом."
             >
             <button class="slider_button slider-next" type="button">
               <span class="visually-hidden">Слудующее фото</span>
             </button>
             <img
               class="slider_image-thumbnail assortment_iceCream_yellow"
-              src="/images/content/slider_ice_cream_yellow-next.png"
+              src="/images/slider/slider_ice_cream_yellow-next.png"
               width="66"
               height="150"
-              alt="Мороженного с желтым джемом"
+              alt="Мороженного с желтым джемом."
             >
             <img
               class="slider_image-thumbnail assortment_iceCream_blue"
-              src="/images/content/slider_ice_cream_blue-next.png"
+              src="/images/slider/slider_ice_cream_blue-next.png"
               width="66"
               height="150"
-              alt="Мороженного с синим джемом"
+              alt="Мороженного с синим джемом."
             >
           </div>
 
@@ -212,7 +218,12 @@
         <ul class="bestseller__list">
           <li class="bestseller__item">
             <a class="bestseller__link" href="#">
-              <img src="/images/content/ice_cream-малинка.png" width="168" height="168" alt="Малиновое мороженое">
+              <img
+                src="/images/ice_cream/ice_cream-малинка.png"
+                width="168"
+                height="168"
+                alt="Малиновое мороженое."
+              >
               <h3 class="bestseller__title">Малинка</h3>
             </a>
             <p class="popular__description">
@@ -225,7 +236,12 @@
           </li>
           <li class="bestseller__item">
             <a class="bestseller__link" href="#">
-              <img src="/images/content/ice_cream-фисташка.png" width="168" height="168" alt="Фисташковое мороженое">
+              <img
+                src="/images/ice_cream/ice_cream-фисташка.png"
+                width="168"
+                height="168"
+                alt="Фисташковое мороженое."
+              >
               <h3 class="bestseller__title">Фисташка</h3>
             </a>
             <p class="popular__description">
@@ -238,7 +254,12 @@
           </li>
           <li class="bestseller__item">
             <a class="bestseller__link" href="#">
-              <img src="/images/content/ice_cream-черника.png" width="168" height="168" alt="Черничное мороженое">
+              <img
+                src="/images/ice_cream/ice_cream-черника.png"
+                width="168"
+                height="168"
+                alt="Черничное мороженое."
+              >
               <h3 class="bestseller__title">Черника</h3>
             </a>
             <p class="popular__description">Крем-брюле с черничным джемом</p>
@@ -249,7 +270,12 @@
           </li>
           <li class="bestseller__item">
             <a class="bestseller__link" href="#">
-              <img src="/images/content/ice_cream-баблгам.png" width="168" height="168" alt="Мороженое Бабл-гам">
+              <img
+                src="/images/ice_cream/ice_cream-баблгам.png"
+                width="168"
+                height="168"
+                alt="Мороженое Бабл-гам."
+              >
               <h3 class="bestseller__title">Бабл-гам</h3>
             </a>
             <p class="popular__description">
@@ -304,22 +330,21 @@
         </div>
       </section>
 
-      <!--TODO БЛОГ-->
-      <section class="blog">
-        <h2 class="visually-hidden">Наш блог</h2>
-        <article class="blog__item">
+
+      <section class="blog__aside">
+        <h2 class="visually-hidden">Дополнительная информация</h2>
+
+        <!--TODO БЛОГ-->
+        <article class="blog">
           <h2 class="blog__title">Новое в нашем блоге</h2>
           <p class="topic_title ">
             <a class="blog__title_link" href="#">
               10 способов сервировки фруктовых щербетов к столу</a>
           </p>
         </article>
-      </section>
 
-      <!--TODO ПОДПИСКА-->
-      <section class="subscription">
-        <h2 class="visually-hidden">Подписка</h2>
-        <aside class="aside__subscription">
+        <!--TODO ПОДПИСКА-->
+        <aside class="subscription">
           <form class="subscription__form" action="mailto:email@example.com" method="get">
             <p class="subscription__description">
               Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего
@@ -359,7 +384,7 @@
             Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы
             подтвердить заказ.
           </h2>
-          <form class="buy__form" action="#" method="get">
+          <form class="buy__form" action="https://echo.htmlacademy.ru/" method="get">
             <p class="buy__form_data">
               <label class="buy__data" for="buy-data">Дата</label>
               <input
@@ -452,10 +477,10 @@
         <a class="header__link_logo" href="https://htmlacademy.ru/">
           <img
             class="footer__image_logo"
-            src="/images/icon/logo_htmlacademy.svg"
+            src="/images/logo_htmlacademy.svg"
             width="93"
             height="27"
-            alt="Логотип HTML-Академии"
+            alt="Логотип HTML-Академии."
           >
         </a>
         <p class="footer__madein">Сделано в <a class="footer__сopyright_link" href="https://htmlacademy.ru/">.html academy</a> © 2021 </p>
