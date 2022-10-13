@@ -27,7 +27,7 @@
         <ul class="navigation__list navigation__list_menu">
           <li class="navigation__item">
             <a class="navigation__link dropdown" href="catalog.html">Каталог</a>
-            <ul class="navigation__header_dropdown">
+            <ul class="navigation__header_dropdown visually-hidden">
               <li class="sub__menu_item sub__menu_item-active">
                 <a class="sub__menu_link sub__menu_link-active" href="#">Новинки</a>
               </li>
@@ -68,12 +68,12 @@
           <!--ВХОД-->
           <li class="navigation__item">
             <a class="navigation__link navigation__entry" href="#">Вход</a>
-            <div class="entry__account_dropdown">
+            <div class="entry__account_dropdown visually-hidden">
               <h2 class="auth_title">Личный кабинет</h2>
               <form class="auth" action="https://echo.htmlacademy.ru/" method="get">
                 <input type="email" value="" placeholder="email@example.com" required>
                 <input type="password" value="password" placeholder="password" required>
-                <button class="btn btn-red" type="submit">Войти</button>
+                <button class="btn btn-pink btn__entry_dropdown" type="submit">Войти</button>
                 <p class="sign__subtitle">
                   <a class="sign__auth_form_link entry__account_password" href="#">Забыли пароль?</a>
                   <a class=" sign__auth_form_link entry__account_registration" href="#">Регистрация</a>
@@ -89,7 +89,7 @@
             </a>
             <div class="navigation__card_dropdown visually-hidden">
               <h2 class="title title__dropdown">Корзина</h2>
-              <ul class="navigation__dropdown_list">
+              <ul class="navigation__dropdown_list ">
                 <li class="card__item">
                   <p class="bold_font">Малинка <span class="card__price-for">1 кг х 310 ₽</span></p>
                   <span class="bold_font ice_price">310 ₽</span>
@@ -101,7 +101,7 @@
                   <span class="card__remove"></span>
                 </li>
               </ul>
-              <a class="btn btn-red btn__card_dropdown" href="#">Оформить заказ</a>
+              <a class="btn btn-pink btn__card_dropdown" href="#">Оформить заказ</a>
               <span class="bold_font">Итого: 790 ₽</span>
             </div>
           </li>
@@ -130,19 +130,23 @@
 
           <!--*ФОТО-->
           <div class="assortment__slider">
-            <button class="slider_button slider-prev" type="button" aria-label="Предыдущее фото" tabindex="0">
-              <span class="visually-hidden">Предыдущее фото</span>
-            </button>
-            <img
-              class="slider_image slider_image-active assortment_iceCream_red"
-              src="images/slider/slider_ice_cream_red-active.png"
-              width="306"
-              height="507"
-              alt="Мороженное с клубничным джемом."
-            >
-            <button class="slider_button slider-next" type="button" aria-label="Слудующее фото" tabindex="0">
-              <span class="visually-hidden">Слудующее фото</span>
-            </button>
+            <div class="slider_image slider_image-active">
+              <button class="slider_button slider-prev" type="button" aria-label="Предыдущее фото" tabindex="0">
+                <span class="visually-hidden">Предыдущее фото</span>
+              </button>
+              <img
+                class="assortment_iceCream_red"
+                src="images/slider/slider_ice_cream_red-active.png"
+                width="306"
+                height="507"
+                alt="Мороженное с клубничным джемом."
+              >
+              <button class="slider_button slider-next" type="button" aria-label="Слудующее фото" tabindex="0">
+                <span class="visually-hidden">Слудующее фото</span>
+              </button>
+            </div>
+
+
             <img
               class="slider_image slider_image-thumbnail assortment_iceCream_yellow"
               src="/images/slider/slider_ice_cream_yellow-next.png"
@@ -372,7 +376,7 @@
               placeholder="email@example.com"
               required
             >
-            <button class="btn btn-red btn__subscription" type="submit">
+            <button class="btn btn-pink btn__subscription" type="submit">
               Отправить
             </button>
           </form>
@@ -428,7 +432,7 @@
                 placeholder="ул. Большая Конюшенная, 19/8"
               >
             </p>
-            <button class="btn btn-red btn__buy" type="submit">
+            <button class="btn btn-pink btn__buy" type="submit">
               Отправить
             </button>
           </form>
@@ -443,7 +447,7 @@
           <h3 class="contacts__subtitle">Для заказов по телефону:</h3>
           <a class="contacts__phone" href="tel:+7(812)812-12-12">+7(812)812-12-12</a>
           <p class="contacts__working_hours"> (с 10 до 20 ежедневно)</p>
-          <a class="btn btn-red btn__feedback popup">Форма обратной связи</a>
+          <a class="btn btn-pink btn__feedback popup">Форма обратной связи</a>
         </div>
       </section>
     </main>
