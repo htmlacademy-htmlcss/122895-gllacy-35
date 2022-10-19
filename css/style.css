@@ -72,15 +72,27 @@ body {
   ШАПКА СОЦСЕТИ
 */
 .socials__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0;
   padding: 0;
 }
 
 .socials__header {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .socials__item {
+  display: flex;
+  margin-right: 16px;
   list-style: none;
+}
+
+.socials__item > li.socials__item {
+  align-content: center;
 }
 
 .socials__link {
@@ -91,8 +103,8 @@ body {
 .socials_telegram,
 .socials_vkontakte,
 .socials_youtube{
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   border: 2px solid rgba(252, 252, 252, 0.3);
   border-radius: 50%;
 }
@@ -161,11 +173,14 @@ body {
 }
 
 .header__navigation {
+  display: flex;
+  margin: 24px 0;
 }
 /*
   ЛОГОТИП
 */
 .header_logo {
+  margin-right: 32px;
 }
 
 .header__link_logo {
@@ -179,13 +194,14 @@ body {
   НАВИГАЦИЯ
 */
 .navigation__list {
+  display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
 
-.navigation__list_menu {
-  margin: 0;
-  padding: 0;
+.navigation__list_menu > .navigation__item {
+  margin-right: 32px;
 }
 
 .navigation__item {
@@ -212,7 +228,7 @@ body {
   vertical-align: middle;
   width: 16px;
   height: 16px;
-  margin-left: 10px;
+  margin-left: 8px;
   background-image: url("../images/icon/navigation__dropdown.svg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -245,8 +261,12 @@ body {
   TODO: ПОЛЬЗОВАТЕЛЬ
 */
 .navigation__list_user {
-  margin: 0;
+  margin-left: auto;
   padding: 0;
+}
+
+.navigation__list_user > .navigation__item{
+  margin-left: 16px;
 }
 
 .navigation__link .number {
@@ -421,17 +441,30 @@ body {
 }
 
 .assortment__wrapper {
+  margin-bottom: 80px;
 }
 
 .assortment__slider {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .assortment__about {
+  max-width: 470px;
+  margin-right: 50px;
+}
+
+.assortment__about > .title{
+  margin-bottom: 24px;
 }
 
 .description {
   margin: 0;
+  margin-bottom: 48px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 /*
@@ -482,6 +515,7 @@ body {
 .slider_image{
   position: relative;
   text-align: center;
+  margin-right: 75px;
 }
 
 .slider_image::before {
@@ -500,6 +534,7 @@ body {
 }
 
 .slider_image-active {
+  margin-right: 62px;
   width: 306px;
 }
 
@@ -509,6 +544,7 @@ body {
 }
 
 .assortment_iceCream_red {
+
 }
 
 .slider_image-thumbnail::before {
@@ -529,6 +565,7 @@ body {
 }
 
 .promotions__list {
+  display: flex;
   margin: 0;
   padding: 0;
 }
@@ -573,6 +610,7 @@ body {
 }
 
 .bestseller__list {
+  display: flex;
   margin: 0;
   padding: 0;
 }
@@ -663,6 +701,7 @@ body {
   КОНТЕНТ: ДОПОЛНИТЕЛЬНЫЕ БЛОКИ
 */
 .blog__aside {
+  display: flex;
 }
 
 /*
@@ -1169,11 +1208,15 @@ body {
 }
 
 .footer__navigation_list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  width: 356px;
 }
 
 .footer__navigation_item {
+  margin-right: 24px;
   list-style: none;
 }
 
