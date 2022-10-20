@@ -265,7 +265,7 @@
             <h3 class="promotions__title">Маршмеллоу даром</h3>
             <p class="populsr__description">
               При покупке 2 кг пломбира добавимв ваш заказ упаковку
-              нежныхзефирок совершенно бесплатно.
+              нежных<br> зефирок совершенно бесплатно.
             </p>
             <a class="btn btn-white btn__promotions"> Хочу подарок </a>
           </li>
@@ -282,6 +282,7 @@
           <li class="bestseller__item">
             <a class="bestseller__link" href="#">
               <img
+                class="bestseller__image"
                 src="/images/ice_cream/ice_cream-малинка.png"
                 width="168"
                 height="168"
@@ -292,14 +293,17 @@
             <p class="popular__description">
               Сливочное мороженое с малиновым джемом
             </p>
-            <span class="popular__price bold_font">310 ₽/кг</span>
-            <button class="bestseller__card" type="button">
-              <span class="visually-hidden">Добавить в корзину</span>
-            </button>
+            <div class="popular__price">
+              <span class=" bold_font">310 ₽/кг</span>
+              <button class="bestseller__card" type="button">
+                <span class="visually-hidden">Добавить в корзину</span>
+              </button>
+            </div>
           </li>
           <li class="bestseller__item">
             <a class="bestseller__link" href="#">
               <img
+                class="bestseller__image"
                 src="/images/ice_cream/ice_cream-фисташка.png"
                 width="168"
                 height="168"
@@ -310,13 +314,17 @@
             <p class="popular__description">
               Фисташковый пломбир с кусочками шоколада
             </p>
-            <span class="popular__price bold_font">10 ₽/кг</span>
-              <span class="visually-hidden">Добавить в корзину</span>
-            </button>
+            <div class="popular__price">
+              <span class=" bold_font">340 ₽/кг</span>
+              <button class="bestseller__card" type="button">
+                <span class="visually-hidden">Добавить в корзину</span>
+              </button>
+            </div>
           </li>
           <li class="bestseller__item">
             <a class="bestseller__link" href="#">
               <img
+                class="bestseller__image"
                 src="/images/ice_cream/ice_cream-черника.png"
                 width="168"
                 height="168"
@@ -325,14 +333,17 @@
               <h3 class="bestseller__title">Черника</h3>
             </a>
             <p class="popular__description">Крем-брюле с черничным джемом</p>
-            <span class="popular__price bold_font">310 ₽/кг</span>
-            <button class="bestseller__card" type="button">
-              <span class="visually-hidden">Добавить в корзину</span>
-            </button>
+            <div class="popular__price">
+              <span class=" bold_font">330 ₽/кг</span>
+              <button class="bestseller__card" type="button">
+                <span class="visually-hidden">Добавить в корзину</span>
+              </button>
+            </div>
           </li>
           <li class="bestseller__item">
             <a class="bestseller__link" href="#">
               <img
+                class="bestseller__image"
                 src="/images/ice_cream/ice_cream-баблгам.png"
                 width="168"
                 height="168"
@@ -343,10 +354,12 @@
             <p class="popular__description">
               Ванильный пломбир со сладкой посыпкой
             </p>
-            <span class="popular__price bold_font">310 ₽/кг</span>
-            <button class="bestseller__card" type="button">
-              <span class="visually-hidden">Добавить в корзину</span>
-            </button>
+            <div class="popular__price">
+              <span class=" bold_font">320 ₽/кг</span>
+              <button class="bestseller__card" type="button">
+                <span class="visually-hidden">Добавить в корзину</span>
+              </button>
+            </div>
           </li>
         </ul>
       </section>
@@ -392,7 +405,6 @@
         </div>
       </section>
 
-
       <section class="blog__aside">
         <h2 class="visually-hidden">Дополнительная информация</h2>
 
@@ -401,7 +413,7 @@
           <h2 class="blog__title">Новое в нашем блоге</h2>
           <p class="topic_title ">
             <a class="blog__title_link" href="#">
-              10 способов сервировки фруктовых щербетов к столу</a>
+              10 способов сервировки фруктовых щербетов<br> к столу</a>
           </p>
         </article>
 
@@ -413,17 +425,18 @@
               самого вкусного, что у нас происходит. Обещаем не спамить и не
               слать всякой ненужной ерунды. Честно =)
             </p>
-            <input
-              class="field subscription__field"
-              type="email"
-              id="subscription-email"
-              name="subscription-email"
-              placeholder="email@example.com"
-              required
-            >
-            <button class="btn btn-pink btn__subscription" type="submit">
-              Отправить
-            </button>
+            <div class="subscription__field_wrapper">
+               <input
+                class=" subscription__field"
+                type="email"
+                id="subscription-email"
+                name="subscription-email"
+                placeholder="email@example.com"
+                required
+              >
+              <button class="btn btn-pink btn__subscription" type="submit">Отправить</button>
+            </div>
+
           </form>
         </aside>
       </section>
@@ -433,7 +446,7 @@
         <!--*ОПИСАНИЕ-->
         <div class="delivery__about">
           <h2 class="title delivery__title">Доставка любимого мороженого на дом</h2>
-          <p class="description">
+          <p class="delivery__description">
             Хочется полакомиться любимым десертом, но нет времени съездить в
             магазин? Закажите доставку мороженого на дом, и курьер привезёт вам
             ваш заказ в течение часа!
@@ -441,36 +454,39 @@
         </div>
 
         <!--*Форма-->
-        <div class="buy">
+        <div class="delivery__buy">
           <h2 class="buy__title">
             Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы
             подтвердить заказ.
           </h2>
           <form class="buy__form" action="https://echo.htmlacademy.ru/" method="get">
-            <p class="buy__form_data">
-              <label class="buy__data buy__label_title" for="buy-data">Дата</label>
-              <input
-                class="field buy__field"
-                type="text"
-                id="buy-data"
-                name="buy-data"
-                placeholder="01.04.2020"
-              >
-            </p>
-            <p class="buy__form_phone">
-              <label class="buy__phone buy__label_title" for="buy-phone">Телефон</label>
-              <input
-                class="field buy__field"
-                type="tel"
-                id="buy-phone"
-                name="buy-phone"
-                placeholder="+7 800 999-00-00"
-              >
-            </p>
+            <div class="buy__form_wrapper">
+              <p class="buy__form_data">
+                <label class="buy__data buy__label_title" for="buy-data">Дата</label>
+                <input
+                  class="field__delivery data__field"
+                  type="text"
+                  id="buy-data"
+                  name="buy-data"
+                  placeholder="01.04.2020"
+                >
+              </p>
+              <p class="buy__form_phone">
+                <label class="buy__phone buy__label_title" for="buy-phone">Телефон</label>
+                <input
+                  class="field__delivery phone__field"
+                  type="tel"
+                  id="buy-phone"
+                  name="buy-phone"
+                  placeholder="+7 800 999-00-00"
+                >
+              </p>
+            </div>
+
             <p class="buy__form_adress">
               <label class="buy__adress buy__label_title" for="buy-adress">Адрес</label>
               <input
-                class="field buy__field"
+                class="field__delivery adress__field"
                 type="text"
                 id="buy-adress"
                 name="buy-adress"
@@ -500,7 +516,7 @@
     <!--  ?ПОДВАЛ САЙТА    -->
     <footer class="main__footer container">
       <!--*СОЦ.СЕТИ-->
-      <ul class="socials__list socials__header">
+      <ul class="socials__list socials__footer">
         <li class="socials__item">
           <a class="socials__link " href="https://t.me/htmlacademy">
             <svg class="socials_telegram" width="16" height="16" viewBox="0 0 16 16" role="img" aria-label="" fill="none" xmlns="http://www.w3.org/2000/svg">

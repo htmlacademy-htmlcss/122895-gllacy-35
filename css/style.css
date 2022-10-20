@@ -162,6 +162,8 @@ body {
 .title-center {
   font-size: 32px;
   text-align: center;
+  font-weight: 900;
+
 }
 
 /*-----------------------------------*/
@@ -321,7 +323,6 @@ body {
 }
 
 .navigation__card{
-
   width: 120px;
 }
 
@@ -524,13 +525,6 @@ body {
   position: absolute;
   top: 25%;
   opacity: 40%;
-/*
-  background-image: url("../images/background/slider_background.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-color: #FFCBD8;
-  border-radius: 50%;*/
 }
 
 .slider_image-active {
@@ -564,19 +558,28 @@ body {
 .promotions {
 }
 
+.promotions > .title {
+  width: 434px;
+  margin: 0 auto;
+  margin-bottom: 55px;
+}
+
 .promotions__list {
   display: flex;
   margin: 0;
+  margin-bottom: 81px;
   padding: 0;
 }
 
 .promotions__item {
+  width: 570px;
   padding: 36px;
   list-style: none;
   background-color: #FF7799;
   background-position: center right;
   background-size: auto;
   background-repeat: no-repeat;
+  border-radius: 16px;
 }
 
 .promotions__item:not(:last-child) {
@@ -593,11 +596,15 @@ body {
 
 .promotions__title {
   margin: 0;
+  margin-bottom: 28px;
+  font-size: 24px;
   line-height: 30px;
 }
 
 .populsr__description {
   margin: 0;
+  margin-bottom: 28px;
+  width: 328px;
 }
 
 .btn__promotions {
@@ -607,6 +614,13 @@ body {
   TODO: ПОПУЛЯРНЫЕ ТОВАРЫ
 */
 .bestseller {
+  margin-bottom: 80px;
+}
+
+.bestseller > .title {
+  margin: 0 auto;
+  margin-bottom: 107px;
+  width: 527px;
 }
 
 .bestseller__list {
@@ -616,9 +630,11 @@ body {
 }
 
 .bestseller__item {
+  position: relative;
   padding: 24px 40px;
   background-color: #FFFFFF;
   list-style: none;
+  border-radius: 8px;
 }
 
 .bestseller__item:not(:last-child) {
@@ -631,14 +647,28 @@ body {
   cursor: pointer;
 }
 
+.bestseller__image {
+  display: block;
+  margin: 0 auto;
+  margin-top: -70px;
+  margin-bottom: 16px;
+}
+
 .bestseller__title {
   margin: 0;
+  margin-bottom: 8px;
+  text-align: center;
   font-size: 20px;
   line-height: 24px;
 }
 
 .popular__description {
   margin: 0;
+  margin-bottom: 20px;
+  width: 190px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .popular__price {
@@ -671,30 +701,74 @@ body {
   TODO: ПРЕИМУЩЕСТВА
 */
 .advantages {
+  margin-bottom: 80px;
   padding: 24px;
   background-image: url("../images/background/advantages.png");
-  background-position: 100% auto;
   background-repeat: repeat;
   border-radius: 16px;
 }
 
 .advantages__wrapper {
-  padding: 40px 56px;
+  padding: 56px 40px;
   background-color: #FFFFFF;
   border-radius: 16px;
 }
 
+.advantages__wrapper > .title {
+  margin-bottom: 56px;
+}
+
 .advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 90px;
   margin: 0;
   padding: 0;
 }
 
 .advantages__item {
+  position: relative;
+  padding-left: 64px;
+  width: 442px;
   list-style: none;
+}
+
+.advantages__item::before {
+  content: "";
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 0;
+  left: 0;
+  vertical-align: middle;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 70% auto;
+}
+
+.advantages__item:nth-child(1):before  {
+  background-image: url("../images/icon/advantages__ice_cream.svg");
+}
+
+.advantages__item:nth-child(2):before {
+  background-image: url("../images/icon/advantages__cow.svg");
+}
+
+.advantages__item:nth-child(3):before{
+  background-image: url("../images/icon/advantages__leaf.svg");
+}
+
+.advantages__item:nth-child(4):before {
+  background-image: url("../images/icon/advantage__sthermometer.svg");
 }
 
 .advantages__description {
   margin: 0;
+  width: 442px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 /*
@@ -702,6 +776,8 @@ body {
 */
 .blog__aside {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
 }
 
 /*
@@ -711,7 +787,7 @@ body {
   width: 570px;
   padding: 32px;
   background-image: url("../images/background/blog.jpg");
-  background-position: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   border-radius: 16px;
 }
@@ -723,6 +799,7 @@ body {
 }
 
 .topic_title {
+  width: 303px;
   font-size: 24px;
   font-weight: 700;
 }
@@ -731,7 +808,6 @@ body {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
-
   font-size: 24px;
   line-height: 30px;
 }
@@ -743,7 +819,7 @@ body {
   width: 570px;
   padding: 6px;
   background-image: url("../images/background/subscription.jpg");
-  background-position: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   border-radius: 16px;
 }
@@ -756,12 +832,20 @@ body {
 
 .subscription__description {
   margin: 0;
+  margin-bottom: 44px;
 }
 
-.field {
+.subscription__field_wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .subscription__field {
+  padding: 14px 16px;
+  width: 300px;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .btn__subscription {
@@ -771,91 +855,134 @@ body {
   TODO: ФОРМА ОБРАТНОЙ СВЯЗИ
 */
 .delivery {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  padding: 64px 64px 64px 100px;
   height: 534px;
   background-image: url("../images/background/delivery.jpg");
-  background-position: 100% auto;
+  background-size: 100% auto;
   background-repeat: no-repeat;
   border-radius: 16px;
 }
 
 .delivery__about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 371px;
 }
 
 .delivery__title{
   font-size: 32px;
-  line-height: 46px;
+  margin-bottom: 24px;
 }
 
-.buy {
+.delivery__description {
+  margin: 0;
+}
+
+.delivery__buy {
+  padding: 40px;
   width: 500px;
+  min-height: 406px;
   background: #FCFCFC;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+  border-radius: 8px;
 }
 
 .buy__title {
   margin: 0;
+  margin-bottom: 32px;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
 }
 
+.field__delivery {
+  padding: 14px 16px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
 .buy__form {
 }
 
-.buy__form_data {
-  margin: 0;
+.buy__form_wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .buy__label_title {
+  display: inline-block;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
 }
 
-.buy__data {
-}
-
-.buy__field {
-}
-
-.buy__form_phone {
-  margin: 0;
-}
-
-.buy__phone {
-}
-
+.buy__form_data,
+.buy__form_phone,
 .buy__form_adress {
   margin: 0;
 }
 
+.buy__form_adress {
+  margin-bottom: 32px;
+}
+
+.buy__data,
+.buy__phone,
 .buy__adress {
+
+}
+
+.data__field {
+  width: 117px;
+}
+
+.phone__field {
+  width: 100%;
+}
+
+.adress__field {
+  width: 100%;
 }
 
 .btn__buy {
+  display: block;
+  margin: 0 auto;
 }
 
 /*
   TODO: КОНТАКТЫ
 */
 .contacts {
+  padding: 64px;
+  margin-bottom: 48px;
   height: 492px;
   background-image: url("../images/background/feedback.jpg");
-  background-position: 100% auto;
+  background-size: 100% auto;
   background-repeat: no-repeat;
   border-radius: 16px;
 }
 
 .contacts__wrapper {
+  padding: 42px;
   width: 343px;
   background: #FCFCFC;
+  box-shadow: 0px 8px 16px rgba(45, 52, 64, 0.12);
+  border-radius: 8px;
 }
 
 .contacts__subtitle {
   margin: 0;
+  margin-bottom: 12px;
   font-weight: 400;
 }
 
 .contacts__address {
+  margin-bottom: 24px;
   font-size: 20px;
   font-weight: 700;
   font-style: normal;
@@ -872,6 +999,9 @@ body {
 
 .contacts__working_hours {
   margin: 0;
+  margin-bottom: 32px;
+  color: #565C66;
+
 }
 
 .btn__feedback {
@@ -1099,11 +1229,10 @@ body {
   margin: 0;
 }
 
-.popular__description {
-  margin: 0;
-}
-
 .popular__price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .assortment__card {
@@ -1202,22 +1331,32 @@ body {
   *FOOTER
 */
 .main__footer {
+  display: flex;
+  margin-bottom: 48px;
+  justify-content: space-between;
 }
 
 .socials__footer {
+  align-self: flex-start;
 }
 
 .footer__navigation_list {
   display: flex;
   flex-wrap: wrap;
+  gap: 8px 24px;
   margin: 0;
+  margin-left: 250px;
   padding: 0;
-  width: 356px;
+  max-width: 400px;
 }
 
 .footer__navigation_item {
-  margin-right: 24px;
+  position: relative;
   list-style: none;
+}
+
+.footer__navigation_item:nth-child(odd) {
+
 }
 
 .footer__navigation_item-like {
@@ -1225,10 +1364,11 @@ body {
 
 .footer__navigation_item-like::before {
   content: "";
-  display: inline-block;
-  width: 14px;
-  height: 13px;
-  margin-right: 9px;
+  position: absolute;
+  top: 2px;
+  left: -25px;
+  width: 20px;
+  height: 20px;
   vertical-align: middle;
   background-image: url("../images/icon/Heart-fill.svg");
   background-position: center center;
