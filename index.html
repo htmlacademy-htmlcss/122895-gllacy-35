@@ -43,7 +43,7 @@
               <li class="sub__menu_item">
                 <a class="sub__menu_link" href="#">Мелорин</a>
               </li>
-          </ul>
+            </ul>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="#">Доставка и оплата</a>
@@ -146,7 +146,30 @@
 
       <!--TODO СЛАЙДЕР-->
       <section class="assortment">
-        <div class="assortment__wrapper assortment__slider">
+        <div class="assortment__wrapper">
+           <!--*ПЕРЕКЛЮЧАТЕЛИ-->
+          <input
+            class="hidden-radio strawberry visually-hidden"
+            type="radio"
+            name="radio-slider"
+            id="strawberry"
+            aria-label="Нежный-пломбир"
+            checked
+          >
+          <input
+            class="hidden-radio banana visually-hidden"
+            type="radio"
+            name="radio-slider"
+            id="banana"
+            aria-label="Сливочное"
+          >
+          <input
+            class="hidden-radio caramel visually-hidden"
+            type="radio"
+            name="radio-slider"
+            id="caramel"
+            aria-label="Карамельный-пломбир"
+          >
           <!--*ОПИСАНИЕ-->
           <div class="assortment__about">
             <h2 class="title">Нежный пломбир<br> с клубничным джемом</h2>
@@ -176,41 +199,43 @@
                 <span class="visually-hidden">Слудующее фото</span>
               </button>
             </div>
-
-
-            <img
-              class="slider_image slider_image-thumbnail assortment_iceCream_yellow"
+            <div class="slider_image slider_image-thumbnail">
+              <img
+              class="assortment_iceCream_yellow"
               src="/images/slider/slider_ice_cream_yellow-next.png"
               width="66"
               height="150"
-              alt="Мороженного с желтым джемом."
-            >
-            <img
-              class="slider_image slider_image-thumbnail assortment_iceCream_blue"
+              alt="Мороженное с желтым джемом."
+              >
+            </div>
+            <div class="slider_image slider_image-thumbnail">
+              <img
+              class="assortment_iceCream_blue"
               src="/images/slider/slider_ice_cream_blue-next.png"
               width="66"
               height="150"
               alt="Мороженного с синим джемом."
-            >
-            <ol class="slider__point_list">
-              <li class="slider__point_item">
-                <a class="slider__point_link" href="#">
-                  <span class="visually-hidden">1</span>
-                </a>
-              </li>
-              <li class="slider__point_item">
-                <a class="slider__point_link" href="#">
-                  <span class="visually-hidden">2</span>
-                </a>
-              </li>
-              <li class="slider__point_item">
-                <a class="slider__point_link" href="#">
-                  <span class="visually-hidden">3</span>
-                </a>
-              </li>
-            </ol>
-          </div>
+              >
+            </div>
 
+          </div>
+          <ol class="slider__point_list">
+            <li class="slider__point_item">
+              <a class="slider__point_link" href="#">
+                <span class="visually-hidden">1</span>
+              </a>
+            </li>
+            <li class="slider__point_item">
+              <a class="slider__point_link" href="#">
+                <span class="visually-hidden">2</span>
+              </a>
+            </li>
+            <li class="slider__point_item">
+              <a class="slider__point_link" href="#">
+                <span class="visually-hidden">3</span>
+              </a>
+            </li>
+          </ol>
           <!--*СОЦ.СЕТИ-->
           <ul class="socials__list socials__header">
             <li class="socials__item">
