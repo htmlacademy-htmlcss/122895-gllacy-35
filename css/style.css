@@ -38,6 +38,7 @@
 }
 
 body {
+  overflow-x: hidden;
   margin: 0;
   background-color: #FEAFC3;
   color: #000000;
@@ -78,9 +79,11 @@ body {
 .socials__list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
   margin: 0;
   padding: 0;
+  max-width: 300px ;
 }
 
 .socials__header {
@@ -197,11 +200,13 @@ body {
 .navigation__list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  max-width: 400px;
 }
 
-.navigation__list_menu > .navigation__item {
+.navigation__list_menu > .navigation__item:not(:last-child) {
   margin-right: 32px;
 }
 
@@ -262,10 +267,11 @@ body {
 .navigation__list_user {
   margin-left: auto;
   padding: 0;
+  min-width: 436px;
 }
 
-.navigation__list_user > .navigation__item {
-  margin-left: 16px;
+.navigation__list_user > .navigation__item:not(:last-child) {
+  margin-right: 16px;
 }
 
 .navigation__link .number {
@@ -431,8 +437,7 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 80px;
-
-  gap: 41px;
+  gap: 21px;
 }
 
 .assortment__slider {
@@ -442,7 +447,8 @@ body {
 }
 
 .assortment__about {
-  width: 470px;
+  margin-left: 70px;
+  max-width: 500px;
 }
 
 .assortment__about > .title{
@@ -535,11 +541,12 @@ body {
 }
 
 .assortment_iceCream_yellow {
-  margin: 0 75px;
+  margin: 0 20px;
 }
 
 .assortment_iceCream_blue {
   margin: 0 auto;
+  margin-left: 10px;
 }
 
 /*
@@ -555,6 +562,8 @@ body {
 
 .promotions__list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
   margin: 0;
   margin-bottom: 81px;
   padding: 0;
@@ -565,17 +574,13 @@ body {
   width: 570px;
   border-radius: 16px;
   background-color: #FF7799;
-  background-position: center right;
+  background-position: bottom right;
   background-size: auto;
   background-repeat: no-repeat;
   list-style: none;
 }
 
-.promotions__item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.promotions__item:first-child {
+.promotions__item:nth-child(1){
   background-image: url("../images/background/promotions_малина.png");
 }
 
@@ -586,6 +591,7 @@ body {
 .promotions__title {
   margin: 0;
   margin-bottom: 28px;
+  max-width: 300px;
   font-size: 24px;
   line-height: 30px;
 }
@@ -593,10 +599,12 @@ body {
 .populsr__description {
   margin: 0;
   margin-bottom: 28px;
-  width: 328px;
+  max-width: 328px;
 }
 
-.btn__promotions {}
+.btn__promotions {
+  max-width: 300px;
+}
 
 /*
   TODO: ПОПУЛЯРНЫЕ ТОВАРЫ
@@ -625,8 +633,10 @@ body {
 .bestseller__item,
 .assortment__item {
   position: relative;
+  flex-grow: 1;
   margin: 0;
   padding: 24px 40px;
+  max-width: 360px;
   border-radius: 8px;
   background-color: #FFFFFF;
   list-style: none;
@@ -649,15 +659,16 @@ body {
 
 .bestseller__title,
 .assortment__title {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 8px;
+  max-width: 200px;
   text-align: center;
   font-size: 20px;
   line-height: 24px;
 }
 
 .popular__description {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 20px;
   width: 190px;
   text-align: center;
@@ -667,9 +678,15 @@ body {
 
 .popular__price {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   font-size: 20px;
   line-height: 24px;
+}
+
+.popular__price > .bold_font {
+  margin-right: 10px;
+
 }
 
 .bestseller__card,
@@ -787,12 +804,14 @@ body {
   width: 570px;
   border-radius: 16px;
   background-image: url("../images/background/blog.jpg");
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .blog__title {
   margin: 0;
+  max-width: 300px;
   font-weight: 400;
   font-size: 16px;
 }
@@ -817,10 +836,9 @@ body {
 .subscription {
   padding: 6px;
   width: 570px;
+  height: fit-content;
   border-radius: 16px;
   background-image: url("../images/background/subscription.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .subscription__form {
@@ -840,6 +858,8 @@ body {
 }
 
 .subscription__field {
+  flex-grow: 1;
+  margin-right: 15px;
   padding: 14px 16px;
   width: 300px;
   border-radius: 4px;
@@ -857,11 +877,10 @@ body {
   justify-content: space-between;
   margin-bottom: 80px;
   padding: 64px 64px 64px 100px;
-  height: 534px;
+  height: auto;
   border-radius: 16px;
   background-image: url("../images/background/delivery.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .delivery__about {
@@ -883,6 +902,7 @@ body {
 .delivery__buy {
   padding: 40px;
   width: 500px;
+  height: fit-content;
   border-radius: 8px;
   background: #FCFCFC;
   box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
@@ -954,11 +974,9 @@ body {
 .contacts {
   margin-bottom: 48px;
   padding: 64px;
-  height: 492px;
   border-radius: 16px;
   background-image: url("../images/background/feedback.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .contacts__wrapper {
@@ -1049,7 +1067,7 @@ body {
   margin-left: 8px;
   width: 7px;
   height: 6px;
-  background-image: url("../images/icon/arraow_breadcrumbs.svg");
+  background-image: url("../images/icon/arrow_breadcrumbs.svg");
   background-position: center center;
   background-repeat: no-repeat;
   content: "";
@@ -1122,7 +1140,7 @@ body {
 
 .select__control,
 .catalog__filter_scale-wrapper {
-  width: 196px;
+  min-width: 196px;
 }
 
 .select__control::after {
@@ -1224,6 +1242,8 @@ body {
 
 .catalog__filter_item {
   position: relative;
+  display: flex;
+  align-items: center;
   margin-right: 16px;
   padding-left: 23px;
   list-style: none;
@@ -1310,13 +1330,15 @@ body {
   position: absolute;
   top: 50%;
   right: 0;
-  bottom: 50%;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   order: 2;
   margin: 0;
   padding: 0;
+  max-width: 300px;
   cursor: pointer;
+  transform: translate(0, -50%);
 }
 
 .pagination__item {
@@ -1372,7 +1394,9 @@ body {
   transform: rotate(180deg);
 }
 
-.btn__assortment_catalog {}
+.btn__assortment_catalog {
+  max-width: 200px;
+}
 
 /*-----------------------------------*/
 /*
