@@ -32,7 +32,7 @@
                   d="M3.80799 6.19526C3.54764 5.93491 3.12553 5.93491 2.86518 6.19526C2.60483 6.45561 2.60483 6.87772 2.86518 7.13807L7.52553 11.7984C7.52759 11.8005 7.52967 11.8026 7.53177 11.8047C7.66246 11.9354 7.83392 12.0005 8.00521 12C8.17518 11.9995 8.34498 11.9344 8.47466 11.8047C8.47675 11.8027 8.47881 11.8006 8.48087 11.7985L13.1412 7.13807C13.4016 6.87772 13.4016 6.45561 13.1412 6.19526C12.8809 5.93491 12.4588 5.93491 12.1984 6.19526L8.00321 10.3905L3.80799 6.19526Z" />
               </svg>
             </a>
-              <ul class="navigation__header_dropdown" >
+              <ul class="popover popover__catalog">
                 <li class="sub__menu_item sub__menu_item-active">
                   <a class="sub__menu_link sub__menu_link-active" href="#">Новинки</a>
                 </li>
@@ -72,8 +72,8 @@
               </svg>
               <span class="visually-hidden">Поиск</span>
             </button>
-            <div class="user__search_dropdown_wrapper">
-              <input class="user__search_dropdown" type="search" name="search" id="nav-search" placeholder="Поиск по сайту">
+            <div class="popover popover__user_search">
+              <input class="user__search_field" type="search" name="search" id="nav-search" placeholder="Поиск по сайту">
             </div>
           </li>
           <!--ВХОД-->
@@ -85,15 +85,17 @@
                 />
               </svg>Вход
             </a>
-            <div class="entry__account_dropdown visually-hidden">
+            <div class="popover popover__entry">
               <h2 class="auth_title">Личный кабинет</h2>
-              <form class="auth" action="https://echo.htmlacademy.ru/" method="get">
-                <input type="email" value="" placeholder="email@example.com" required>
-                <input type="password" value="password" placeholder="password" required>
-                <button class="btn btn-pink btn__entry_dropdown" type="submit">Войти</button>
-                <div class="sign__subtitle">
-                  <a class="sign__auth_form_link entry__account_password" href="#">Забыли пароль?</a>
-                  <a class=" sign__auth_form_link entry__account_registration" href="#">Регистрация</a>
+              <form class="popover__auth" action="https://echo.htmlacademy.ru/" method="get">
+                <input class="field popover__field" type="email" value="" placeholder="email@example.com" required>
+                <input class="field popover__field"  type="password" value="password" placeholder="••••••" required>
+                <div class="popover_entry_inner">
+                  <button class="btn btn__entry_dropdown" type="submit">Войти</button>
+                  <div class="sign__subtitle">
+                    <a class="sign__auth_form_link entry__account_password" href="#">Забыли пароль?</a>
+                    <a class=" sign__auth_form_link entry__account_registration" href="#">Регистрация</a>
+                  </div>
                 </div>
               </form>
             </div>
@@ -108,34 +110,47 @@
               </svg>
               <span class="visually-hidden">Корзина</span>2 товара
             </a>
-            <div class="navigation__card_dropdown visually-hidden">
-              <h2 class="title title__dropdown">Корзина</h2>
-              <ul class="navigation__dropdown_list ">
-                <li class="card__item card__item_raspberry">
-                  <p class="bold_font">Малинка <span class="card__price-for">1 кг х 310 ₽</span></p>
-                  <span class="bold_font ice_price">310 ₽</span>
-                  <button class="card__remove" type="button" aria-label="Удалить мороженное из корзины">
-                    <svg width="10" height="10" viewBox="0 0 16 16" role="img" aria-label="Удалить мороженное из корзины" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M12.803 4.13807C13.0634 3.87772 13.0634 3.45561 12.803 3.19526C12.5427 2.93491 12.1206 2.93491 11.8602 3.19526L7.99914 7.05633L4.13807 3.19526C3.87772 2.93491 3.45561 2.93491 3.19526 3.19526C2.93491 3.45561 2.93491 3.87772 3.19526 4.13807L7.05633 7.99914L3.19526 11.8602C2.93491 12.1206 2.93491 12.5427 3.19526 12.803C3.45561 13.0634 3.87772 13.0634 4.13807 12.803L7.99914 8.94195L11.8602 12.803C12.1206 13.0634 12.5427 13.0634 12.803 12.803C13.0634 12.5427 13.0634 12.1206 12.803 11.8602L8.94195 7.99914L12.803 4.13807Z"
-                        fill="#2D3440" />
-                    </svg>
-                  </button>
-                </li>
-                <li class="card__item card__item_bubble">
-                  <p class="bold_font">Бабл-гам <span class="card__price-for">1,5 кг х 320 ₽</span></p>
-                  <span class="bold_font ice_price">480 ₽</span>
-                  <button class="card__remove" type="button" aria-label="Удалить мороженное из корзины">
-                    <svg width="10" height="10" viewBox="0 0 16 16" role="img" aria-label="Удалить мороженное из корзины" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M12.803 4.13807C13.0634 3.87772 13.0634 3.45561 12.803 3.19526C12.5427 2.93491 12.1206 2.93491 11.8602 3.19526L7.99914 7.05633L4.13807 3.19526C3.87772 2.93491 3.45561 2.93491 3.19526 3.19526C2.93491 3.45561 2.93491 3.87772 3.19526 4.13807L7.05633 7.99914L3.19526 11.8602C2.93491 12.1206 2.93491 12.5427 3.19526 12.803C3.45561 13.0634 3.87772 13.0634 4.13807 12.803L7.99914 8.94195L11.8602 12.803C12.1206 13.0634 12.5427 13.0634 12.803 12.803C13.0634 12.5427 13.0634 12.1206 12.803 11.8602L8.94195 7.99914L12.803 4.13807Z"
-                        fill="#2D3440" />
-                    </svg>
-                  </button>
-                </li>
-              </ul>
-              <a class="btn btn-pink btn__card_dropdown" href="#">Оформить заказ</a>
-              <span class="bold_font">Итого: 790 ₽</span>
+            <div class="popover popover__cart">
+              <div class="popover__content">
+                <h2 class="popover__title">Корзина</h2>
+                <ul class="cart__item_list">
+
+                  <li class="cart__item">
+                    <img class="cart__item_image" src="../images/ice_cream/ice_cream-малинка.png" alt="Мороженное">
+                    <div class="cart__item_text">
+                      <p class="bold_font cart__item_title">Малинка</p>
+                      <p class="cart__item_description">1 кг х 310 ₽</p>
+                    </div>
+                    <p class="ice_price">310 ₽</p>
+                    <button type="button" class="card__remove">
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M9.803 1.138a.6666.6666 0 1 0-.9428-.9427l-3.861 3.861L1.138.1953a.6667.6667 0 1 0-.9428.9428l3.861 3.861-3.861 3.8611a.6667.6667 0 0 0 .9428.9428l3.861-3.861 3.8611 3.861a.6666.6666 0 1 0 .9428-.9428l-3.861-3.861L9.803 1.138Z" />
+                      </svg>
+                    </button>
+                  </li>
+
+                  <li class="cart__item">
+                    <img class="cart__item_image" src="../images/ice_cream/ice_cream-баблгам.png" alt="Мороженное">
+                    <div class="cart__item_text">
+                      <p class="cart__item_title">Бабл-гам</p>
+                      <p class="cart__item_description">1,5 кг х 320 ₽</p>
+                    </div>
+                    <p class="ice_price">480 ₽</p>
+                    <button type="button" class="card__remove">
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M9.803 1.138a.6666.6666 0 1 0-.9428-.9427l-3.861 3.861L1.138.1953a.6667.6667 0 1 0-.9428.9428l3.861 3.861-3.861 3.8611a.6667.6667 0 0 0 .9428.9428l3.861-3.861 3.8611 3.861a.6666.6666 0 1 0 .9428-.9428l-3.861-3.861L9.803 1.138Z" />
+                      </svg>
+                    </button>
+                  </li>
+
+                </ul>
+                <div class="popover__cart_inner">
+                  <a class="btn btn__card_dropdown" href="#">Оформить заказ</a>
+                  <p class="popover__price">Итого: 790 ₽</p>
+                </div>
+              </div>
             </div>
           </li>
         </ul>
@@ -180,7 +195,7 @@
               Натуральное мороженое из свежих сливок<br> и молока с вкуснейшим
               клубничным джемом –<br> это идеальный десерт для всей семьи.
             </p>
-            <button class="btn btn-white btn__assortment" type="submit">Заказать</button>
+            <a class="product__link_button" href="#">Заказать</a>
           </div>
           <!--*ФОТО-->
           <ul class="assortment__slider">
@@ -537,7 +552,7 @@
               При покупке 2 кг любого фруктового мороженого добавим в ваш заказ
               банку малинового варенья бесплатно.
             </p>
-            <a class="btn btn-white btn__promotions"> Хочу подарок </a>
+            <a class="product__link_button"> Хочу подарок </a>
           </li>
           <li class="promotions__item">
             <h3 class="promotions__title">Маршмеллоу даром</h3>
@@ -545,7 +560,7 @@
               При покупке 2 кг пломбира добавим<br> в ваш заказ упаковку
               нежных<br> зефирок совершенно бесплатно.
             </p>
-            <a class="btn btn-white btn__promotions"> Хочу подарок </a>
+            <a class="product__link_button"> Хочу подарок </a>
         </ul>
       </section>
 
@@ -697,14 +712,14 @@
             </p>
             <div class="subscription__field_wrapper">
                <input
-                class=" subscription__field"
+                class="field field__delivery"
                 type="email"
                 id="subscription-email"
                 name="subscription-email"
                 placeholder="email@example.com"
                 required
               >
-              <button class="btn btn-pink btn__subscription" type="submit">Отправить</button>
+              <button class="btn btn__subscription" type="submit">Отправить</button>
             </div>
 
           </form>
@@ -740,7 +755,7 @@
                 </button>
               </label>
               <input
-                class="field__delivery data__field"
+                class="field"
                 type="text"
                 id="buy-data"
                 name="buy-data"
@@ -750,7 +765,7 @@
             <p class="buy__form_phone">
               <label class="buy__phone buy__label_title" for="buy-phone">Телефон</label>
               <input
-                class="field__delivery phone__field"
+                class="field phone__field"
                 type="tel"
                 id="buy-phone"
                 name="buy-phone"
@@ -767,14 +782,14 @@
                 </button>
               </label>
               <input
-                class="field__delivery adress__field"
+                class="field adress__field"
                 type="text"
                 id="buy-adress"
                 name="buy-adress"
                 placeholder="ул. Большая Конюшенная, 19/8"
               >
             </p>
-            <button class="btn btn-pink btn__buy" type="submit">Отправить</button>
+            <button class="btn btn__buy" type="submit">Отправить</button>
           </form>
         </div>
       </section>
@@ -789,7 +804,7 @@
             <a class="contacts__phone" href="tel:+7(812)812-12-12">+7(812)812-12-12</a>
             <p class="contacts__working_hours"> (с 10 до 20 ежедневно)</p>
           </address>
-          <a class="btn btn-pink btn__feedback popup">Форма обратной связи</a>
+          <a class="btn btn__feedback popup">Форма обратной связи</a>
         </div>
       </section>
     </main>
