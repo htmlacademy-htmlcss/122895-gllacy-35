@@ -72,7 +72,8 @@
               </svg>
               <span class="visually-hidden">Поиск</span>
             </button>
-            <div class="popover popover__user_search">
+            <form class="popover popover__search" action="" method="get">
+              <label for="nav-searc"></label>
               <input class="user__search_field" type="search" name="search" id="nav-search" placeholder="Поиск по сайту">
             </div>
           </li>
@@ -152,6 +153,12 @@
                 </div>
               </div>
             </div>
+            <div class="popover popover__card_empty visually-hidden">
+              <p class="card__empty_text">
+                Ваша корзина пока пуста
+              </p>
+            </div>
+
           </li>
         </ul>
       </nav>

@@ -228,6 +228,17 @@ body {
   background-color: #E7E7E7;
   box-shadow: 0 0 0 4px rgba(252, 252, 252, 0.4);
 }
+
+.product__link:focus-visible,
+.bestseller__link:focus-visible {
+  outline: none;
+}
+
+.bestseller__link:focus-visible .bestseller__item,
+.bestseller__link:focus-visible .bestseller__item {
+  outline: 2px solid black;
+}
+
 .btn-transparent {
   border: 2px solid #FCFCFC;
   background: rgba(252, 252, 252, 0.3);
@@ -550,7 +561,7 @@ body {
   background-color: rgba(252, 252, 252, 0.3);
 }
 
-.popover__user_search {
+.popover__search {
   width: 356px;
   min-height: 96px;
   right: 16px;
@@ -576,7 +587,9 @@ body {
   fill: #FFFFFF;
 }
 
-.navigation__search:active ~ .popover__user_search {
+.navigation__search:hover ~ .popover__search,
+.navigation__search:focus ~ .popover__search,
+.navigation__search:active ~ .popover__search {
   display: block;
 }
 
@@ -611,12 +624,16 @@ body {
   АВТОРИЗАЦИЯ: ПОДМЕНЮ
 */
 .popover__entry {
-  display: flex;
-  flex-direction: column;
   width: 420px;
   right: 16px;
   padding: 48px;
   padding-bottom: 52px;
+}
+
+.navigation__entry:focus + .popover__entry,
+.navigation__entry:hover + .popover__entry,
+.navigation__entry:active + .popover__entry {
+	display: block;
 }
 
 .auth_title {
@@ -626,7 +643,6 @@ body {
   font-size: 24px;
   line-height: 30px;
 }
-
 
 .popover__field {
   width: 100%;
@@ -650,6 +666,7 @@ body {
 .sign__subtitle {
   display: flex;
   flex-direction: column;
+  margin-left: 23px;
 }
 
 .entry__account_password {
@@ -678,6 +695,12 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
+}
+
+.navigation__card:focus-within + .popover__cart,
+.navigation__card:hover + .popover__cart,
+.navigation__card:active + .popover__cart {
+	display: block;
 }
 
 .popover__title {
@@ -754,6 +777,19 @@ body {
 
 .popover__price {
   margin: 0;
+}
+
+.popover__card_empty {
+  text-align: center;
+  width: 288px;
+}
+
+.card__empty_text {
+  margin: 0;
+  padding: 48px 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 /*
