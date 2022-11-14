@@ -2287,8 +2287,8 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .footer__navigation_list {
   display: grid;
-  grid-template-columns: repeat(2, max-content);
-  gap: 1px 24px;
+  grid-template-columns: repeat(2, auto);
+  gap: 1px 3px;
   padding: 0;
   margin: 0;
   width: 360px;
