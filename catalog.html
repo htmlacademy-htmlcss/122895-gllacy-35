@@ -27,10 +27,7 @@
         <!--Левое меню-->
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a
-              class="navigation__link navigation__catalog dropdown"
-              href="#"
-              >Каталог
+            <a class="navigation__link navigation__catalog dropdown" href="#">Каталог
               <svg
                 class="catalog_icon"
                 width="16"
@@ -42,7 +39,7 @@
                 aria-label="Дополнительное меню"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
-              >
+                >
                 <path
                   fill-rule="evenodd"
                   clip-rule="evenodd"
@@ -52,9 +49,7 @@
             </a>
             <ul class="popover popover__catalog">
               <li class="sub__menu_item sub__menu_item-active">
-                <a class="sub__menu_link sub__menu_link-active" href="#"
-                  >Новинки</a
-                >
+                <a class="sub__menu_link sub__menu_link-active" href="#">Новинки</a>
               </li>
               <li class="sub__menu_item">
                 <a class="sub__menu_link" href="catalog.html">Сливочное</a>
@@ -80,16 +75,11 @@
         <!--Правое меню-->
         <ul class="navigation__list navigation__list_user">
           <li class="navigation__item">
-            <a class="number bold_font" href="tel:+7800555-86-28"
-              >+7 800 555-86-28</a
-            >
+            <a class="number bold_font" href="tel:+7800555-86-28">+7 800 555-86-28</a>
           </li>
           <!--ПОИСК-->
           <li class="navigation__item">
-            <button
-              class="navigation__link navigation__search"
-              aria-label="Кнопка поиска"
-            >
+            <button class="navigation__link navigation__search" aria-label="Кнопка поиска">
               <svg
                 class="navigation__search_svg"
                 width="16"
@@ -101,7 +91,7 @@
                 focusable="false"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
-              >
+                >
                 <path
                   fill-rule="evenodd"
                   clip-rule="evenodd"
@@ -110,11 +100,7 @@
               </svg>
               <span class="visually-hidden">Поиск</span>
             </button>
-            <form
-              class="popover popover__search"
-              action="https://echo.htmlacademy.ru/"
-              method="get"
-            >
+            <form class="popover popover__search" action="https://echo.htmlacademy.ru/" method="get">
               <label for="nav-search">
                 <input
                   class="user__search_field"
@@ -129,10 +115,7 @@
           </li>
           <!--ВХОД-->
           <li class="navigation__item">
-            <a
-              class="navigation__link navigation__entry"
-              href="#"
-            >
+            <a class="navigation__link navigation__entry" href="#">
               <svg
                 class="entry__dropdown_svg"
                 width="14"
@@ -144,7 +127,7 @@
                 focusable="false"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
-              >
+                >
                 <path
                   fill-rule="evenodd"
                   clip-rule="evenodd"
@@ -154,11 +137,7 @@
             </a>
             <div class="popover popover__entry">
               <h2 class="auth_title">Личный кабинет</h2>
-              <form
-                class="popover__auth"
-                action="https://echo.htmlacademy.ru/"
-                method="get"
-              >
+              <form class="popover__auth" action="https://echo.htmlacademy.ru/" method="get">
                 <label class="visually-hidden" for="entry_email">Email</label>
                 <input
                   class="field popover__field"
@@ -177,20 +156,10 @@
                   required
                 >
                 <div class="popover_entry_inner">
-                  <button class="btn btn__entry_dropdown" type="submit">
-                    Войти
-                  </button>
+                  <button class="btn btn__entry_dropdown" type="submit">Войти</button>
                   <div class="sign__subtitle">
-                    <a
-                      class="sign__auth_form_link entry__account_password"
-                      href="#"
-                      >Забыли пароль?</a
-                    >
-                    <a
-                      class="sign__auth_form_link entry__account_registration"
-                      href="#"
-                      >Регистрация</a
-                    >
+                    <a class="sign__auth_form_link entry__account_password" href="#">Забыли пароль?</a>
+                    <a class="sign__auth_form_link entry__account_registration" href="#">Регистрация</a>
                   </div>
                 </div>
               </form>
@@ -198,10 +167,7 @@
           </li>
           <!--КОРЗИНА-->
           <li class="navigation__item">
-            <a
-              class="navigation__link navigation__card"
-              href="#"
-            >
+            <a class="navigation__link navigation__card" href="#">
               <svg
                 class="navigation__card_svg"
                 width="16"
@@ -213,7 +179,7 @@
                 focusable="false"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
-              >
+                >
                 <path
                   fill-rule="evenodd"
                   clip-rule="evenodd"
@@ -287,34 +253,19 @@
             <a class="breadcrumbs__link" href="#">Каталог</a>
           </li>
           <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link breadcrumbs__link-active"
-              >Сливочное мороженое</a
-            >
+            <a class="breadcrumbs__link breadcrumbs__link-active">Сливочное мороженое</a>
           </li>
         </ul>
       </header>
       <!--ФИЛЬТРАЦИЯ-->
       <section class="filter__catalog">
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
-        <form
-          class="filter__catalog_form"
-          action="https://echo.htmlacademy.ru/"
-          method="get"
-        >
+        <form class="filter__catalog_form" action="https://echo.htmlacademy.ru/" method="get">
           <!--ВЫПАДАЮЩИЙ СПИСОК-->
           <fieldset class="catalog__filter_group catalog__filter-sorting">
-            <legend
-              class="filter__legend catalog__filter_title"
-              aria-label="Фильтр-сортировки"
-            >
-              Сортировка:
-            </legend>
+            <legend class="filter__legend catalog__filter_title" aria-label="Фильтр-сортировки">Сортировка:</legend>
             <select class="select__control" aria-label="Сортировка">
-              <option
-                class="select__control_link"
-                value="popularity"
-                selected
-              >
+              <option class="select__control_link" value="popularity" selected>
                 по популярности
               </option>
               <option class="select__control_link" value="type">
@@ -327,16 +278,14 @@
           </fieldset>
           <!--ПОЛЗУНОК-->
           <fieldset class="catalog__filter_group catalog__filter-price">
-            <legend class="filter__legend catalog__filter_title">
-              Цена:
+            <legend class="filter__legend catalog__filter_title"> Цена:
               <label class="catalog__filter_label">
                 <input
                   class="range__input"
                   type="number"
                   value="450"
                   name="min-price"
-                >
-                ₽
+                > ₽
               </label>
               <label class="catalog__filter_label">
                 -
@@ -354,14 +303,10 @@
               <div class="range__scale">
                 <div class="range__bar" style="left: 52px; width: 86px">
                   <span class="range__toggle toggle__min" tabindex="0">
-                    <span class="visually-hidden"
-                      >Изменить минимальную цену.</span
-                    >
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
                   </span>
                   <span class="range__toggle toggle__max" tabindex="0">
-                    <span class="visually-hidden"
-                      >Изменить максимальную цену.</span
-                    >
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
                   </span>
                 </div>
               </div>
@@ -369,12 +314,7 @@
           </fieldset>
           <!--РАДИО-КНОПКИ-->
           <fieldset class="catalog__filter_group catalog__filter-bold">
-            <legend
-              class="filter__legend catalog__filter_title"
-              aria-label="Фильтр-жирности"
-            >
-              Жирность:
-            </legend>
+            <legend class="filter__legend catalog__filter_title" aria-label="Фильтр-жирности">Жирность:</legend>
             <ul class="catalog__filter_list">
               <li class="catalog__filter_item">
                 <label class="filter__control">
@@ -426,12 +366,7 @@
           </fieldset>
           <!--ЧЕКБОКС-->
           <fieldset class="catalog__filter_group catalog__filter-filler">
-            <legend
-              class="filter__legend catalog__filter_title"
-              aria-label="Фильтр-наполнитель"
-            >
-              Наполнитель:
-            </legend>
+            <legend class="filter__legend catalog__filter_title" aria-label="Фильтр-наполнитель">Наполнитель:</legend>
             <ul class="catalog__filter_list filter_filler-checkboxes">
               <li class="catalog__filter_item">
                 <label class="filter__control">
@@ -492,9 +427,7 @@
               </li>
             </ul>
           </fieldset>
-          <button class="btn btn__catalog_filter" type="submit">
-            Применить
-          </button>
+          <button class="btn btn__catalog_filter" type="submit">Применить</button>
         </form>
       </section>
       <!--АССОРТИМЕНТ-->
@@ -527,7 +460,7 @@
                   aria-label="Добавить в корзину"
                   fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg"
-                >
+                  >
                   <path
                     fill-rule="evenodd"
                     clip-rule="evenodd"
@@ -563,7 +496,7 @@
                   aria-label="Добавить в корзину"
                   fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg"
-                >
+                  >
                   <path
                     fill-rule="evenodd"
                     clip-rule="evenodd"
@@ -597,7 +530,7 @@
                   aria-label="Добавить в корзину"
                   fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg"
-                >
+                  >
                   <path
                     fill-rule="evenodd"
                     clip-rule="evenodd"
@@ -633,7 +566,7 @@
                   aria-label="Добавить в корзину"
                   fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg"
-                >
+                  >
                   <path
                     fill-rule="evenodd"
                     clip-rule="evenodd"
@@ -670,7 +603,7 @@
                   aria-label="Добавить в корзину"
                   fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg"
-                >
+                 >
                   <path
                     fill-rule="evenodd"
                     clip-rule="evenodd"
@@ -740,7 +673,7 @@
                   aria-label="Добавить в корзину"
                   fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg"
-                >
+                  >
                   <path
                     fill-rule="evenodd"
                     clip-rule="evenodd"
@@ -811,7 +744,7 @@
                   aria-label="Добавить в корзину"
                   fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg"
-                >
+                 >
                   <path
                     fill-rule="evenodd"
                     clip-rule="evenodd"
@@ -847,7 +780,7 @@
                   aria-label="Добавить в корзину"
                   fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg"
-                >
+                  >
                   <path
                     fill-rule="evenodd"
                     clip-rule="evenodd"
@@ -883,7 +816,7 @@
                   aria-label="Добавить в корзину"
                   fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg"
-                >
+                 >
                   <path
                     fill-rule="evenodd"
                     clip-rule="evenodd"
@@ -917,7 +850,7 @@
                   aria-label="Добавить в корзину"
                   fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg"
-                >
+                 >
                   <path
                     fill-rule="evenodd"
                     clip-rule="evenodd"
@@ -931,9 +864,7 @@
         </ul>
         <!--ПОСТРАНИЧНАЯ НАВИГАЦИЯ-->
         <div class="pagination">
-          <button class="btn btn__assortment_catalog" type="button">
-            Показать еще
-          </button>
+          <button class="btn btn__assortment_catalog" type="button">Показать еще</button>
           <ul class="pagination__catalog_list">
             <li class="pagination__item">
               <a class="pagination-prev pagination-disabled" href="#">
@@ -979,7 +910,7 @@
               aria-label="Кнопка Телеграмм"
               aria-hidden="true"
               focusable="false"
-            >
+              >
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
@@ -1002,7 +933,7 @@
               focusable="false"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-            >
+              >
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
@@ -1014,10 +945,7 @@
           </a>
         </li>
         <li class="socials__item">
-          <a
-            class="socials__link"
-            href="https://www.youtube.com/user/htmlacademyru"
-          >
+          <a class="socials__link" href="https://www.youtube.com/user/htmlacademyru">
             <svg
               class="socials_icon socials_youtube"
               width="24"
@@ -1029,7 +957,7 @@
               focusable="false"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-            >
+              >
               <path
                 d="M9.33583 7.86083L7.46417 6.9875C7.30083 6.91167 7.16667 6.99667 7.16667 7.1775V8.8225C7.16667 9.00333 7.30083 9.08833 7.46417 9.0125L9.335 8.13917C9.49917 8.0625 9.49917 7.9375 9.33583 7.86083ZM8 0C3.58167 0 0 3.58167 0 8C0 12.4183 3.58167 16 8 16C12.4183 16 16 12.4183 16 8C16 3.58167 12.4183 0 8 0ZM8 11.25C3.905 11.25 3.83333 10.8808 3.83333 8C3.83333 5.11917 3.905 4.75 8 4.75C12.095 4.75 12.1667 5.11917 12.1667 8C12.1667 10.8808 12.095 11.25 8 11.25Z"
                 fill="#ffffff"
@@ -1042,9 +970,7 @@
       <!--Навигация-->
       <ul class="footer__navigation_list">
         <li class="footer__navigation_item footer__navigation_item-like">
-          <a class="footer__navigation_link bold_font" href="#"
-            >Для поставщиков</a
-          >
+          <a class="footer__navigation_link bold_font" href="#">Для поставщиков</a>
         </li>
         <li class="footer__navigation_item">
           <a class="footer__navigation_link" href="#">Наши документы</a>
@@ -1053,9 +979,7 @@
           <a class="footer__navigation_link" href="#">О производстве</a>
         </li>
         <li class="footer__navigation_item">
-          <a class="footer__navigation_link" href="#"
-            >Экологические стандарты</a
-          >
+          <a class="footer__navigation_link" href="#">Экологические стандарты</a>
         </li>
       </ul>
       <!--Copyright-->
@@ -1070,11 +994,7 @@
           >
         </a>
         <p class="footer__madein">
-          Сделано в
-          <a class="footer__сopyright_link" href="https://htmlacademy.ru/"
-            >.html academy</a
-          >
-          © 2021
+          Сделано в <a class="footer__сopyright_link" href="https://htmlacademy.ru/">.html academy</a>© 2021
         </p>
       </div>
     </footer>
