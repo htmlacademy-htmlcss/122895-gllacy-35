@@ -1758,7 +1758,7 @@ input[type="search"]::-webkit-search-cancel-button {
 */
 .modal {
   position: fixed;
-  display: none;
+  display: flex;
   top: 0;
   left: 0;
   width: 100%;
@@ -1766,8 +1766,8 @@ input[type="search"]::-webkit-search-cancel-button {
   background-color: rgba(45, 52, 64, 0.3);
 }
 
-.modal__open {
-  display: flex;
+.modal__close {
+  display: none;
 }
 
 .modal__inner {
@@ -1784,7 +1784,7 @@ input[type="search"]::-webkit-search-cancel-button {
   box-sizing: border-box;
 }
 
-.modal__close {
+.modal__close_button {
   position: absolute;
   padding: 0;
   right: 32px;
